@@ -4,13 +4,13 @@
 # In[1]:
 
 
-pip install pyTelegramBotAPI
+#pip install pyTelegramBotAPI
 
 
 # In[3]:
 
 
-pip install -U python-telegram-bot
+#pip install -U python-telegram-bot
 
 
 # In[1]:

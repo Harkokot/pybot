@@ -63,8 +63,8 @@ step_2_text_2 = 'Куда дальше?'
 def step_2(message):
     if message.text == 'Шаг 2':
         
-        os.chdir('./photo')
-        with open('IMG_9638.jpg', 'rb') as photo_2:
+        #os.chdir('./photo')
+        with open('./photo/IMG_9638.jpg', 'rb') as photo_2:
             bot.send_photo(message.chat.id, photo_2)
         bot.send_message(message.chat.id, step_2_text_1, parse_mode='html')
         bot.send_message(message.chat.id, step_2_text_2,         reply_markup=menu, parse_mode='html')
@@ -97,20 +97,20 @@ answer_3_1 = 'Выбери последний шаг'
 #создаем функцию с вариантами ответа для функции Шаг 3
 def step_3_3(message):
     if message.text == 'Король и Шут, Би-2':
-        os.chdir('./photo')
-        with open('IMG_3194.jpg', 'rb') as photo_3_1:
+        #os.chdir('./photo')
+        with open('./photo/IMG_3194.jpg', 'rb') as photo_3_1:
             bot.send_photo(message.chat.id, photo_3_1)
         bot.send_message(message.chat.id, answer_3, parse_mode='html')
         bot.send_message(message.chat.id, answer_3_1, reply_markup=menu,         parse_mode='html')
     if message.text == 'Стас Пьеха, Дима Билан':
-        os.chdir('./photo')
-        with open('IMG_5346.jpg', 'rb') as photo_3_2:
+        #os.chdir('./photo')
+        with open('./photo/IMG_5346.jpg', 'rb') as photo_3_2:
             bot.send_photo(message.chat.id, photo_3_2)
         bot.send_message(message.chat.id, wrong_answer_3_1, parse_mode='html')
         bot.send_message(message.chat.id, answer_3_1, reply_markup=menu,         parse_mode='html')
     if message.text == 'Тимати, Егор Крид':
-        os.chdir('./photo')
-        with open('IMG_4655.JPG', 'rb') as photo_3_3:
+        #os.chdir('./photo')
+        with open('./photo/IMG_4655.JPG', 'rb') as photo_3_3:
             bot.send_photo(message.chat.id, photo_3_3)
         bot.send_message(message.chat.id, wrong_answer_3_2, parse_mode='html')
         bot.send_message(message.chat.id, answer_3_1, reply_markup=menu,         parse_mode='html')
@@ -121,8 +121,8 @@ def step_3_3(message):
 def step_3(message):
     if message.text == 'Шаг 3':
         
-        os.chdir('./photo')
-        with open('C.png', 'rb') as photo_3:
+        #os.chdir('./photo')
+        with open('./photo/C.png', 'rb') as photo_3:
             bot.send_photo(message.chat.id, photo_3)
         bot.send_message(message.chat.id, step_3_text,         reply_markup=opros_3, parse_mode='html')
     
@@ -145,8 +145,8 @@ video_4.add(types.InlineKeyboardButton('Смотреть гайд', url=url_4))
 def step_4(message):
     if message.text == 'Шаг 4':
         
-        os.chdir('./photo')
-        with open('IMG_7049.jpg', 'rb') as photo_4:
+        #os.chdir('./photo')
+        with open('./photo/IMG_7049.jpg', 'rb') as photo_4:
             bot.send_photo(message.chat.id, photo_4)
         bot.send_message(message.chat.id, step_4_text_1,                          reply_markup=types.ReplyKeyboardRemove(),                          parse_mode='html')
         bot.send_message(message.chat.id, step_4_text_2, reply_markup=video_4)
@@ -178,15 +178,15 @@ answer_1_1 = 'Куда дальше?'
 
 def step_1_1(message):
     if message.text == 'Выбрать правильного фотографа':
-        os.chdir('./photo')
-        with open('IMG_2935.jpg', 'rb') as photo_1_1:
+        #os.chdir('./photo')
+        with open('./photo/IMG_2935.jpg', 'rb') as photo_1_1:
             bot.send_photo(message.chat.id, photo_1_1)
         bot.send_message(message.chat.id, answer_1, parse_mode='html')
         bot.send_message(message.chat.id, answer_1_1, reply_markup=menu,         parse_mode='html')
     if (message.text == 'Сходить к психологу' or
     message.text == 'Купить курс по обработке фото'):
-        os.chdir('./photo')
-        with open('IMG_7614.jpg', 'rb') as photo_1_2:
+        #os.chdir('./photo')
+        with open('./photo/IMG_7614.jpg', 'rb') as photo_1_2:
             bot.send_photo(message.chat.id, photo_1_2)
         bot.send_message(message.chat.id, wrong_answer_1, parse_mode='html')
         bot.send_message(message.chat.id, answer_1_1, reply_markup=menu,         parse_mode='html')
@@ -200,8 +200,8 @@ def step_1_1(message):
 def step_1(message):
     if message.text == 'Шаг 1':
 
-        os.chdir('./photo')
-        with open('IMG_6078.jpg', 'rb') as photo_1:
+        #os.chdir('./photo')
+        with open('./photo/IMG_6078.jpg', 'rb') as photo_1:
             bot.send_photo(message.chat.id, photo_1)
         bot.send_message(message.chat.id, step_1_text, reply_markup=opros_1,         parse_mode='html')     
 
